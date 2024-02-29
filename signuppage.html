@@ -5,26 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sign Up</title>
 <link rel="stylesheet" type="text/css" href="signuppage.css">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
 
-<form id="signup-form">
-  <h2>Sign up for an account</h2>
-  <h4>Travel near. Travel far.</h4>
+    <img src="https://i.ibb.co/CzX5Dt7/travelnest-logo.png" alt="Your Logo" class="logo">
+
+    <div class="container">    
+    <div id="signup-form">
+  <h3>Sign up for an account</h3>
+  <h6>Travel near. Travel far.</h6>
   <input type="firstname" id="firstname" placeholder="First Name" required>
   <input type="lastname" id="lastname" placeholder="Last Name" required>
   <input type="email" id="email" placeholder="Email" required>
   <input type="password" id="password" placeholder="Password" required>
+  
   <select id="location" required>
     <option value="" disabled selected>Select your location</option>
     <option value="TO">Toronto</option>
     <option value="HO">Honolulu</option>
-  
     <!-- Add more cities as needed -->
   </select>
+
   <input type="submit" value="Sign Up">
   <p class="error-message" id="error-message"></p>
 </form>
+
+<div class="login-link">
+    <p>Have an account? <a href="login.html">Login now</a></p>
+  </div>
+</div>
 
 <script src="signuppage.js"></script>
 
